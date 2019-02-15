@@ -1,0 +1,4 @@
+*.iml
+*.gem
+Gemfile.lock
+.bundle
