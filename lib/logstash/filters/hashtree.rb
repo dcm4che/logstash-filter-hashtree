@@ -18,7 +18,7 @@ class LogStash::Filters::Hashtree < LogStash::Filters::Base
   config :previous, :validate => :string, :default => 'fingerprint_previous'
 
   # Path of the file where the generated fingerprint will be stored.
-  config :file, :validate => :string, :default => 'fingerprint.txt'
+  config :file, :validate => :string, :default => '/usr/share/logstash/data/filter-hashtree'
 
   # The fingerprint method to use.
   config :method, :validate => ['SHA1', 'SHA256', 'SHA384', 'SHA512', 'MD5'], :default => 'SHA1'
